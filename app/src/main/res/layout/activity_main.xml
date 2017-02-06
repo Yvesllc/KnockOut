@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.knockout.rss.knockout.MainActivity"
+    android:clipToPadding="false">
+
+    <Button
+        android:text="@string/strConnect"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonconnecter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/StyleButtons" />
+
+    <Button
+        android:text="@string/strHistory"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonhistorique"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonconnecter"
+        android:layout_toStartOf="@+id/buttonconnecter"
+        style="@style/StyleButtons"/>
+
+    <Button
+        android:text="@string/strKnock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonknock"
+        android:layout_above="@+id/buttonconnecter"
+        android:layout_alignLeft="@+id/buttonhistorique"
+        android:layout_alignStart="@+id/buttonhistorique"
+        style="@style/StyleButtons"/>
+
+    <Button
+        android:text="@string/strParameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonparametre"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/StyleButtons" />
+
+    <ImageView
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView3"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1">
+            <RadioButton
+                android:text="Profile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton1"/>
+            <RadioButton
+                android:text="Profile2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"/>
+            <RadioButton
+                android:text="Profile3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scrollView2"
+        android:layout_above="@+id/buttonknock">
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:id="@+id/textview" />
+    </ScrollView>
+
+</RelativeLayout>

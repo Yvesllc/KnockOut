@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KnockOut</string>
+    <string name="strConnect">Connect</string>
+    <string name="strHistory">History</string>
+    <string name="strParameter">Param</string>
+    <string name="strKnock">Knock</string>
+</resources>

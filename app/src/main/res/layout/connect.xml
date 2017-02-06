@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <Button android:text="Connection" android:id="@+id/connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"></Button>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout1">
+        <EditText android:text="test" android:id="@+id/sendtxt" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="4"></EditText>
+        <Button android:text="Envoyer" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/send"></Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:layout_below="@+id/sendtxt"
+        android:id="@+id/scrollView"
+        android:layout_weight="1">
+    <TextView android:text="" android:id="@+id/logview" android:bufferType="editable" android:layout_width="match_parent" android:layout_height="match_parent"
+              android:layout_weight="0.61"></TextView>
+    </ScrollView>
+
+
+    <Button
+        android:text="Stop - Restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/butStopnRestart"
+        />
+
+    <Button
+        android:text="Knock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/butKnock"/>
+</LinearLayout>
